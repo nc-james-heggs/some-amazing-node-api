@@ -11,6 +11,8 @@ jobs:
       - node/install:
           node-version: '20.9.0'
       - node/install-packages
+      - run:
+          command: npm run test
 workflows:
   build-app: 
     jobs:
